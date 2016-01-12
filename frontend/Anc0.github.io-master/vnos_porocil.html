@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Andraž Krašovec">
+    <link rel="shortcut icon" href="img/tab-icon.png">
+    <title>MojDijak</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="../../assets/styles/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="../../assets/styles/css/bootstrap-theme.css" rel="stylesheet">
+    <!-- font icon -->
+    <link href="../../assets/styles/css/elegant-icons-style.css" rel="stylesheet"/>
+    <link href="../../assets/styles/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu&subset=latin-ext' rel='stylesheet' type='text/css'>
+    <!-- Custom styles -->
+    <link href="../../assets/styles/css/style.css" rel="stylesheet">
+    <link href="../../assets/styles/css/style-responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- container section start -->
+<section id="container" class="">
+    <!-- header start -->
+    <header class="header custom-bg">
+        <div class="toggle-nav">
+            <div class="icon-reorder" data-original-title="Toggle Navigation" data-placement="bottom"><i
+                    class="icon_menu"></i></div>
+        </div>
+
+        <!--logo start-->
+        <a href="index.html" class="logo">Administrator</a>
+        <!--logo end-->
+
+        <div class="top-nav notification-row">
+            <!-- notificatoin dropdown start-->
+            <ul class="nav pull-right top-menu">
+
+                <!-- inbox notificatoin start-->
+                <li id="mail_notificatoin_bar" class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="icon-envelope-l"></i>
+                        <span class="badge bg-important">5</span>
+                    </a>
+                    <ul class="dropdown-menu extended inbox">
+                        <div class="notify-arrow notify-arrow-violet"></div>
+                        <li>
+                            <p class="violet">Imate 5 novih sporočil</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Urška Makovec</span>
+                                    <span class="time">1 min</span>
+                                    </span>
+                                    <span class="message">
+                                        Popravite vpise ocen 4. razredov.
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Jan Tomše</span>
+                                    <span class="time">5 min</span>
+                                    </span>
+                                    <span class="message">
+                                     Hvala lepa in lep pozdrav.
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Tina Vovk</span>
+                                    <span class="time">2 uri</span>
+                                    </span>
+                                    <span class="message">
+                                        Prosim uredite moj email naslov.
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Marko Cafnik</span>
+                                    <span class="time">1 dan</span>
+                                    </span>
+                                    <span class="message">
+                                        Dijakom manjkajo ocene.
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sporocila.html">Poglej vsa sporočila</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- inbox notificatoin end -->
+                <!-- user login dropdown start-->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <img alt="" src="img/avatar1_small.jpg">
+                            </span>
+                        <span class="username">Patricija Zupan</span>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu extended logout">
+                        <div class="log-arrow-up"></div>
+                        <li class="eborder-top">
+                            <a href="profile.html"><i class="icon_profile"></i> Moj profil</a>
+                        </li>
+                        <li>
+                            <a href="sporocila.html"><i class="icon_mail_alt"></i> Sporočila</a>
+                        </li>
+                        <li>
+                            <a href="../../views/login/login.html"><i class="icon_key_alt"></i> Izpiši Me</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- user login dropdown end -->
+            </ul>
+            <!-- notificatoin dropdown end-->
+        </div>
+    </header>
+    <!--header end-->
+
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu">
+                <li class="sub-menu">
+                    <a class="" href="index.html">
+                        <i class="icon_house_alt"></i>
+                        <span>Namizje</span>
+                    </a>
+                </li>
+                <li class="sub-menu active">
+                    <a href="javascript:;" class="">
+                        <i class="icon_document_alt"></i>
+                        <span>Ocene</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a class="sub-menu-element" href="ogled_ocen.html">Ogled ocen</a></li>
+                        <li><a class="sub-menu-element" href="vnos_ocen.html">Vnos ocen</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu active">
+                    <a href="javascript:;" class="">
+                        <i class="icon_desktop"></i>
+                        <span>Poročila</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a class="sub-menu-element" href="ogled_porocil.html">Ogled poročil</a></li>
+                        <li><a class="sub-menu-element" href="vnos_porocil.html">Vnos poročila</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+
+    <!-- content start -->
+    <section id="main-content" style="margin-left: 180px">
+        <section class="wrapper">
+            <div class="row">
+                <div class="col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-md-11 col-sm-11 col-xs-11">
+                    <div class="row">
+                        <h1><b>Vnos poročila</b></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-10">
+                            <div class="row">
+                                <p class="report-subtitle">Izberite letnik in oddelek</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 sol-xs-12">
+                                    <select id="select1" class="form-control input-default">
+                                        <option value="">Izberite letnik</option>
+                                        <option value="1">1. letnik</option>
+                                        <option value="2">2. letnik</option>
+                                        <option value="3">3. letnik</option>
+                                        <option value="4">4. letnik</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-5 col-sm-5 sol-xs-12">
+                                    <select id="select2" class="form-control input-default" onchange="showStudentListReport()">
+                                        <option value="">Izberite oddelek</option>
+                                        <option value="A">Oddelek A</option>
+                                        <option value="B">Oddelek B</option>
+                                        <option value="C">Oddelek C</option>
+                                        <option value="D">Oddelek D</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="report-subtitle">Izberite predmet in učilnico</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 sol-xs-12">
+                                    <select id="select3" class="form-control input-default">
+                                        <option value="">Izberite predmet</option>
+                                        <option value="1">Angleščina</option>
+                                        <option value="2">Fizika</option>
+                                        <option value="3">Geografija</option>
+                                        <option value="4">Kemija</option>
+                                        <option value="5">Matematika</option>
+                                        <option value="6">Slovenščina</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-5 col-sm-5 sol-xs-12">
+                                    <select id="select4" class="form-control input-default">
+                                        <option value="">Izberite učlnico</option>
+                                        <option value="1">U01</option>
+                                        <option value="2">U02</option>
+                                        <option value="3">U03</option>
+                                        <option value="4">U04</option>
+                                        <option value="5">U05</option>
+                                        <option value="6">U06</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row report-subtitle">
+                                <p>Izberite datum</p>
+                            </div>
+                            <div class="row report-subtitle">
+                                <input id="datepicker" type="date" class="form-control input-default">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Na kratko opišite predelano snov:</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                            <div class="row">
+                                <div id="report-validity" class="col-md-6 col-sm-6 col-xs-6">
+
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <button class="btn btn-primary btn-default btn-grades pull-right" onclick="validateReportData()">Oddaj poročilo</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-2"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-10">
+                            <div class="row">
+                                <h4>Odsotnosti</h4>
+                            </div>
+                            <div id="report-student-list">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- content end -->
+</section>
+<!-- container section ends -->
+<!-- javascripts -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui-1.10.4.min.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<!-- bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- nice scroll -->
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+<!--custom script for all page-->
+<script src="js/scripts.js"></script>
+<!-- own javscript -->
+<script src="ownjs/manipulateElements.js"></script>
+
+</body>
+</html>
