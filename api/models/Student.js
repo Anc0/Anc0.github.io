@@ -1,5 +1,5 @@
 /**
-* Professor.js
+* Student.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -9,7 +9,7 @@ module.exports = {
   //Database connection
   connection: "someMysqlServer",
   //Table name
-  tableName: "professor",
+  tableName: "student",
   //Model
   attributes: {
     id: {
@@ -24,16 +24,17 @@ module.exports = {
     lastname: {
       type: "string"
     },
-    email: {
-      type: "string",
-      unique: true
+    parents: {
+      collection: "parent",
+      via: "student"
     },
-    password: {
-      type: "string"
+    professors: {
+      collection: "professor",
+      via: "students"
     },
-    students: {
-      collection: "student",
-      via: "professors"
+    grades: {
+      collection: "grade",
+      via: "student"
     }
   }
 };

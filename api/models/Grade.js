@@ -1,5 +1,5 @@
 /**
-* Professor.js
+* Grade.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -9,7 +9,7 @@ module.exports = {
   //Database connection
   connection: "someMysqlServer",
   //Table name
-  tableName: "professor",
+  tableName: "grade",
   //Model
   attributes: {
     id: {
@@ -18,22 +18,14 @@ module.exports = {
       unique: true,
       primaryKey: true
     },
-    name: {
+    subject: {
       type: "string"
     },
-    lastname: {
-      type: "string"
+    value: {
+      type: "integer"
     },
-    email: {
-      type: "string",
-      unique: true
-    },
-    password: {
-      type: "string"
-    },
-    students: {
-      collection: "student",
-      via: "professors"
+    student: {
+      model: "student"
     }
   }
 };

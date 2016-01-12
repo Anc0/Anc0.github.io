@@ -6,9 +6,31 @@
 */
 
 module.exports = {
-
+  //Database connection
+  connection: "someMysqlServer",
+  //Table name
+  tableName: "administrator",
+  //Model
   attributes: {
-
+    id: {
+      type: "integer",
+      autoIncrement: true,
+      unique: true,
+      primaryKey: true
+    },
+    name: {
+      type: "string"
+    },
+    lastname: {
+      type: "string"
+    },
+    email: {
+      type: "string",
+      unique: true
+    },
+    password: {
+      type: "string"
+    }
   }
 };
 

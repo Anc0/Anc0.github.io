@@ -30,6 +30,9 @@ module.exports = {
     },
     password: {
       type: "string"
+    },
+    student: {
+      model: "student"
     }
   }
 };
