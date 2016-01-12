@@ -14,29 +14,23 @@ module.exports = {
   attributes: {
     id: {
       type: "integer",
-        autoIncrement: true,
-        unique: true,
-        primaryKey: true
+      autoIncrement: true,
+      unique: true,
+      primaryKey: true
     },
     name: {
-        type: "string"
+      type: "string"
     },
     lastname: {
-        type: "string"
+      type: "string"
     },
     email: {
-        type: "string",
-        unique: true
+      type: "string",
+      unique: true
     },
     password: {
-        type: "string"
-    },
-  //Model functions
-  createParent: function (parent) {
-    create(parent);
-  }
-
-
+      type: "string"
+    }
   }
 };
 

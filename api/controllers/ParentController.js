@@ -7,14 +7,21 @@
 
 module.exports = {
 	index: function(req,res) {
+  /*
     var parent = {
-      name: "Micka",
-      lastname: "Novakovicecicieicei",
-      email: "aaa@bbb.ccc",
-      password: "rozica"
+      name: req.param('name'),
+      lastname: req.param('lastname'),
+      email: req.param('email'),
+      password: req.param('password')
     };
-    var Parent = waterline.collections.parent;
-    model.createParent(parent);
+
+    Parent.create(parent, function userCreated(err, user) {
+      if (err) {
+        console.log(err);
+        return res.redirect('/parent/grades');
+      }
+    });*/
+
     res.view();
   },
   grades: function(req,res) {
