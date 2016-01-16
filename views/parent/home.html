@@ -10,10 +10,10 @@
     <link href="../../assets/styles/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
     <link href="../../assets/styles/css/bootstrap-theme.css" rel="stylesheet">
-    <!-- font icon -->
+    <!-- fonts -->
     <link href="../../assets/styles/css/elegant-icons-style.css" rel="stylesheet"/>
     <link href="../../assets/styles/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu&subset=latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&subset=latin-ext" rel='stylesheet' type='text/css'>
     <!-- Custom styles -->
     <link href="../../assets/styles/css/style.css" rel="stylesheet">
     <link href="../../assets/styles/css/style-responsive.css" rel="stylesheet"/>
@@ -29,7 +29,7 @@
         </div>
 
         <!--logo start-->
-        <a href="index" class="logo">Profesor</a>
+        <a href="index" class="logo">Starš</a>
         <!--logo end-->
 
         <div class="top-nav notification-row">
@@ -49,7 +49,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="images/avatar-mini.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Urška Makovec</span>
                                     <span class="time">1 min</span>
@@ -61,7 +61,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="../images/avatar-mini2.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Jan Tomše</span>
                                     <span class="time">5 min</span>
@@ -136,7 +136,7 @@
             <!-- sidebar menu start-->
             <ul class="sidebar-menu">
                 <li class="sub-menu">
-                    <a class="" href="index.html">
+                    <a class="" href="index">
                         <i class="icon_house_alt"></i>
                         <span>Namizje</span>
                     </a>
@@ -148,20 +148,9 @@
                     </a>
                     <ul class="sub">
                         <li><a class="sub-menu-element" href="grades">Ogled ocen</a></li>
-                        <li><a class="sub-menu-element" href="submitGrade">Vnos ocen</a></li>
                     </ul>
                 </li>
-                <li class="sub-menu active">
-                    <a href="javascript:;" class="">
-                        <i class="icon_desktop"></i>
-                        <span>Poročila</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="sub-menu-element" href="reports">Ogled poročil</a></li>
-                        <li><a class="sub-menu-element" href="submitReport">Vnos poročila</a></li>
-                    </ul>
-                </li>
-            </ul>
+          </ul>
             <!-- sidebar menu end-->
         </div>
     </aside>
@@ -171,92 +160,21 @@
     <section id="main-content" style="margin-left: 180px">
         <section class="wrapper">
             <div class="row">
-                <div class="col-md-1 col-sm-1 col-xs-1"></div>
-                <div class="col-md-11 col-sm-11 col-xs-11">
-                    <div class="row">
-                        <h1><b>Vnos poročila</b></h1>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5 col-sm-5 col-xs-10">
-                            <div class="row">
-                                <p class="report-subtitle">Izberite letnik in oddelek</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-5 col-sm-5 sol-xs-12">
-                                    <select id="select1" class="form-control input-default">
-                                        <option value="">Izberite letnik</option>
-                                        <option value="1">1. letnik</option>
-                                        <option value="2">2. letnik</option>
-                                        <option value="3">3. letnik</option>
-                                        <option value="4">4. letnik</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-5 col-sm-5 sol-xs-12">
-                                    <select id="select2" class="form-control input-default" onchange="showStudentListReport()">
-                                        <option value="">Izberite oddelek</option>
-                                        <option value="A">Oddelek A</option>
-                                        <option value="B">Oddelek B</option>
-                                        <option value="C">Oddelek C</option>
-                                        <option value="D">Oddelek D</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <p class="report-subtitle">Izberite predmet in učilnico</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-5 col-sm-5 sol-xs-12">
-                                    <select id="select3" class="form-control input-default">
-                                        <option value="">Izberite predmet</option>
-                                        <option value="1">Angleščina</option>
-                                        <option value="2">Fizika</option>
-                                        <option value="3">Geografija</option>
-                                        <option value="4">Kemija</option>
-                                        <option value="5">Matematika</option>
-                                        <option value="6">Slovenščina</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-5 col-sm-5 sol-xs-12">
-                                    <select id="select4" class="form-control input-default">
-                                        <option value="">Izberite učlnico</option>
-                                        <option value="1">U01</option>
-                                        <option value="2">U02</option>
-                                        <option value="3">U03</option>
-                                        <option value="4">U04</option>
-                                        <option value="5">U05</option>
-                                        <option value="6">U06</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row report-subtitle">
-                                <p>Izberite datum</p>
-                            </div>
-                            <div class="row report-subtitle">
-                                <input id="datepicker" type="date" class="form-control input-default">
-                            </div>
-                            <div class="form-group">
-                                <label for="comment">Na kratko opišite predelano snov:</label>
-                                <textarea class="form-control" rows="5" id="comment"></textarea>
-                            </div>
-                            <div class="row">
-                                <div id="report-validity" class="col-md-6 col-sm-6 col-xs-6">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>Moj dijak</h1>
 
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <button class="btn btn-primary btn-default btn-grades pull-right" onclick="validateReportData()">Oddaj poročilo</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-1 col-sm-1 col-xs-2"></div>
-                        <div class="col-md-5 col-sm-5 col-xs-10">
-                            <div class="row">
-                                <h4>Odsotnosti</h4>
-                            </div>
-                            <div id="report-student-list">
-                            </div>
+                            <p><br>Nahajate se na straneh spletne aplikacije Moj dijak.
+                                Moj dijak je aplikacija, ki olajša komunikacijo med
+                                šolo in starši ter enim in drugim omogoča popoln pregled
+                                nad dosežki dijakov.<br><br>Za začetek izberite želene akcije
+                                na levi strani zaslona.</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3"></div>
             </div>
         </section>
     </section>
@@ -275,8 +193,6 @@
 <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
 <!--custom script for all page-->
 <script src="js/scripts.js"></script>
-<!-- own javscript -->
-<script src="ownjs/manipulateElements.js"></script>
 
 </body>
 </html>

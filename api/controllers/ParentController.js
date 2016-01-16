@@ -6,23 +6,8 @@
  */
 
 module.exports = {
-	index: function(req,res) {
-  /*
-    var parent = {
-      name: req.param('name'),
-      lastname: req.param('lastname'),
-      email: req.param('email'),
-      password: req.param('password')
-    };
-
-    Parent.create(parent, function userCreated(err, user) {
-      if (err) {
-        console.log(err);
-        return res.redirect('/parent/grades');
-      }
-    });*/
-
-    res.view();
+	home: function(req,res) {
+     res.view();
   },
   grades: function(req,res) {
       res.view();

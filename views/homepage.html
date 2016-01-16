@@ -8,7 +8,7 @@
     <title>MojDijak Login</title>
 
     <!-- Bootstrap CSS -->
-    <link href="../assets/styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
     <link href="../assets/styles/css/bootstrap-theme.css" rel="stylesheet">
     <!-- Custom fonts -->
@@ -16,41 +16,45 @@
     <!-- Custom styles -->
     <link href="../assets/styles/css/style.css" rel="stylesheet">
     <link href="../assets/styles/css/style-responsive.css" rel="stylesheet"/>
+
+    <script src="../assets/js/jquery-ui-1.10.4.min.js"></script>
 </head>
 
 <body class="login-img3-body">
 
-<div class="container">
+    <div class="container">
 
-    <form class="login-form" action="../../frontend/Anc0.github.io-master/index.html">
-        <div class="login-wrap">
-            <img src="../assets/images/logo.png" class="img-responsive login-logo" alt="">
+        <form class="login-form" action="http://localhost:1337/login/index" method="post">
+            <div class="login-wrap">
+                <img src="../assets/images/logo.png" class="img-responsive login-logo" alt="">
 
-            <p class="login-title">Moj Dijak</p>
+                <p class="login-title">Moj Dijak</p>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="icon_profile"></i></span>
+                        <input type="text" name="email" class="form-control" placeholder="E-pošta" autofocus>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+                        <input type="password" name="password" class="form-control" placeholder="Geslo">
+                    </div>
 
-            <div class="input-group">
-                <span class="input-group-addon"><i class="icon_profile"></i></span>
-                <input type="text" class="form-control" placeholder="E-pošta" autofocus>
+                        <input type="checkbox" value="remember-me"> Zapomni si me
+
+                        <div class="pull-right">
+                            <input type="radio" name="type" value="admin">Administrator<br>
+                            <input type="radio" name="type" value="prof">Profesor<br>
+                            <input type="radio" name="type" value="parent">Stars<br>
+                        </div>
+
+
+
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Prijava">
+                    <input class="btn btn-info btn-lg btn-block" type="submit" value="Registracija">
             </div>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-                <input type="password" class="form-control" placeholder="Geslo">
-            </div>
-            <label class="checkbox">
-                <input type="checkbox" value="remember-me"> Zapomni si me
-                <span class="pull-right login-forgot"> <a href="#"> Pozabljeno geslo?</a></span>
-            </label>
-            <a href="parent/index" class="btn btn-primary btn-lg btn-block" type="submit">Prijava</a>
-            <a href="#" class="btn btn-info btn-lg btn-block" type="submit">Registracija</a>
-        </div>
-    </form>
+        </form>
 
-</div>
+    </div>
 
 </body>
-<script>
-    function addParent() {
 
-    }
-</script>
 </html>
