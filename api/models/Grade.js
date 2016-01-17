@@ -24,6 +24,9 @@ module.exports = {
     value: {
       type: "integer"
     },
+    professor:{
+      type: "string"
+    },
     stud: {
       model: "student"
     }

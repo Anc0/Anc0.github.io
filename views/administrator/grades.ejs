@@ -160,7 +160,6 @@
                                     <p class="col-md-2 col-sm-2">Ime</p>
                                     <input id="getgrades-name" type="text" name="name"
                                            class="form-control input-default col-md-10 col-sm-10">
-
                                 </div>
                                 <div class="row">
                                     <p class="col-md-2 col-sm-2">Priimek</p>
@@ -173,7 +172,20 @@
                             </form>
                         </div>
                         <div class="col-md-8 col-sm-8 col-xs-12" id="grades-list">
-                            <table id=\"getgrades-table\" class=\"table table-striped\"><thead><tr><th>Predmet</th><th>Prvi semester</th><th>Drugi semester</th><th>Povprečje</th></tr></thead><tbody><tr class=\"success\"><td>Angleščina</td><td>4, 3, 2</td><td>1, 3, 2</td><td>2,50</td></tr><tr class=\"success\"><td>Fizika</td><td>2, 1, 5</td><td>3, 5, 2</td><td>3,00</td></tr><tr class=\"danger\"><td>Geografija</td><td>1, 1, 2</td><td>2, 3, 1</td><td>1,67</td></tr><tr class=\"success\"><td>Kemija</td><td>5, 2, 2</td><td>2, 5, 5</td><td>3,50</td></tr><tr class=\"success\"><td>Matematika</td><td>5, 3, 3</td><td>4, 2, 3</td><td>3,33</td></tr><tr class=\"success\"><td>Slovenščina</td><td>4, 3, 2</td><td>1, 3, 2</td><td>2,50</td></tr></tbody></table>
+                            <table id="getgrades-table" class="table table-striped">
+                                <thead>
+                                    <tr><th>Predmet</th><th>Ocena</th><th>Profesor</th><th>Datum</th></tr>
+                                </thead>
+                                <tbody>
+                                <%for(var i = 0; i < grades.length; i++) {%>
+                                    <tr class="
+                                    <%var success = "success";
+                                    if(grades[i].value == 1) {
+                                        success = "danger";
+                                    }%><%=success%>"><td><%=grades[i].subject%></td><td><%=grades[i].value%></td><td><%=grades[i].professor%></td><td><%=grades[i].createdAt%></td></tr>
+                                <%}%>
+                                </tbody>
+                            </table>
 
                         </div>
                     </div>
