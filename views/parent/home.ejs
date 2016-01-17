@@ -3,9 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Andraž Krašovec">
-    <link rel="shortcut icon" href="/image/tab-icon.png">
+    <link rel="shortcut icon" href="img/tab-icon.png">
     <title>MojDijak</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="../../assets/styles/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="../../assets/styles/css/bootstrap-theme.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="../../assets/styles/css/elegant-icons-style.css" rel="stylesheet"/>
+    <link href="../../assets/styles/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&subset=latin-ext" rel='stylesheet' type='text/css'>
+    <!-- Custom styles -->
+    <link href="../../assets/styles/css/style.css" rel="stylesheet">
+    <link href="../../assets/styles/css/style-responsive.css" rel="stylesheet"/>
 </head>
 <body>
 <!-- container section start -->
@@ -18,7 +29,7 @@
         </div>
 
         <!--logo start-->
-        <a href="index" class="logo">Administrator</a>
+        <a href="index" class="logo">Starš</a>
         <!--logo end-->
 
         <div class="top-nav notification-row">
@@ -38,7 +49,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="/image/avatar-mini.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="images/avatar-mini.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Urška Makovec</span>
                                     <span class="time">1 min</span>
@@ -50,7 +61,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="../images/avatar-mini2.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Jan Tomše</span>
                                     <span class="time">5 min</span>
@@ -108,7 +119,7 @@
                             <a href="sporocila.html"><i class="icon_mail_alt"></i> Sporočila</a>
                         </li>
                         <li>
-                            <a href="../../views/homepage.html"><i class="icon_key_alt"></i> Izpiši Me</a>
+                            <a href="../homepage.ejs"><i class="icon_key_alt"></i> Izpiši Me</a>
                         </li>
                     </ul>
                 </li>
@@ -125,7 +136,7 @@
             <!-- sidebar menu start-->
             <ul class="sidebar-menu">
                 <li class="sub-menu">
-                    <a class="" href="home.html">
+                    <a class="" href="index">
                         <i class="icon_house_alt"></i>
                         <span>Namizje</span>
                     </a>
@@ -137,54 +148,51 @@
                     </a>
                     <ul class="sub">
                         <li><a class="sub-menu-element" href="grades">Ogled ocen</a></li>
-                        <li><a class="sub-menu-element" href="submitGrade">Vnos ocen</a></li>
                     </ul>
                 </li>
-           </ul>
+          </ul>
             <!-- sidebar menu end-->
         </div>
     </aside>
     <!--sidebar end-->
 
-    <!--content start-->
+    <!-- content start -->
     <section id="main-content" style="margin-left: 180px">
         <section class="wrapper">
             <div class="row">
-                <div class="col-md-1 col-sm-1 col-xs-1"></div>
-                <div class="col-md-11 col-sm-11 col-xs-11 ">
-                    <div class="row"><h1><b>Ocene dijaka</b></h1></div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <form action="http://localhost:1337/student">
-                                <div class="row">
-                                    <p class="col-md-2 col-sm-2">Ime</p>
-                                    <input id="getgrades-name" type="text" name="name"
-                                           class="form-control input-default col-md-10 col-sm-10">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>Moj dijak</h1>
 
-                                </div>
-                                <div class="row">
-                                    <p class="col-md-2 col-sm-2">Priimek</p>
-                                    <input id="getgrades-surname" type="text" name="lastname"
-                                           class="form-control input-default col-md-10 col-sm-10">
-                                </div>
-                                <div class="row">
-                                    <input class="btn btn-primary btn-default btn-grades" type="submit" value="Prikaži">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-md-8 col-sm-8 col-xs-12" id="grades-list">
-
+                            <p><br>Nahajate se na straneh spletne aplikacije Moj dijak.
+                                Moj dijak je aplikacija, ki olajša komunikacijo med
+                                šolo in starši ter enim in drugim omogoča popoln pregled
+                                nad dosežki dijakov.<br><br>Za začetek izberite želene akcije
+                                na levi strani zaslona.</p>
                         </div>
                     </div>
                 </div>
-
-
+                <div class="col-md-3"></div>
             </div>
         </section>
     </section>
-    <!--content end-->
-
+    <!-- content end -->
 </section>
+<!-- container section ends -->
+<!-- javascripts -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui-1.10.4.min.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<!-- bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- nice scroll -->
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+<!--custom script for all page-->
+<script src="js/scripts.js"></script>
+
 </body>
 </html>
-
