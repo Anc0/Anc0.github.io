@@ -30,10 +30,6 @@ module.exports = {
     },
     password: {
       type: "string"
-    },
-    students: {
-      collection: "student",
-      via: "professors"
     }
   }
 };

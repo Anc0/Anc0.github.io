@@ -31,7 +31,7 @@ module.exports = {
     password: {
       type: "string"
     },
-    student: {
+    stud: {
       model: "student"
     }
   }

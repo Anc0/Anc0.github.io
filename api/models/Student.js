@@ -1,9 +1,9 @@
 /**
-* Student.js
-*
-* @description :: TODO: You might write a short summary of how this model works and what it represents here.
-* @docs        :: http://sailsjs.org/#!documentation/models
-*/
+ * Student.js
+ *
+ * @description :: TODO: You might write a short summary of how this model works and what it represents here.
+ * @docs        :: http://sailsjs.org/#!documentation/models
+ */
 
 module.exports = {
   //Database connection
@@ -26,15 +26,11 @@ module.exports = {
     },
     parents: {
       collection: "parent",
-      via: "student"
-    },
-    professors: {
-      collection: "professor",
-      via: "students"
+      via: "stud"
     },
     grades: {
       collection: "grade",
-      via: "student"
+      via: "stud"
     }
   }
 };

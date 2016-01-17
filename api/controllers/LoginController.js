@@ -17,7 +17,6 @@ module.exports = {
             res.redirect("http://localhost:1337");
           }
           else {
-            console.log('Found User with name ' + found.pop().name);
             res.redirect("http://localhost:1337/administrator/home");
           }
         });
@@ -28,7 +27,6 @@ module.exports = {
             res.redirect("http://localhost:1337");
           }
           else {
-            console.log('Found User with name ' + found.pop().name);
             res.redirect("http://localhost:1337/administrator/home");
           }
         });
@@ -39,7 +37,6 @@ module.exports = {
             res.redirect("http://localhost:1337");
           }
           else {
-            console.log('Found User with name ' + found.pop().name);
             res.redirect("http://localhost:1337/administrator/home");
           }
         });
